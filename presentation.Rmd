@@ -1,0 +1,19 @@
+---
+title: "Bayesian Statistics for Data Science"
+author: Ryan Chitwood
+date: "`r format(Sys.time(), '%d %B %Y')`"
+output: 
+  revealjs::revealjs_presentation:
+    theme: solarized
+---
+
+```{r include = FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# Introduction
+
+## About Me
+
+>- Hello, world!
+>- My name is Ryan Chitwood.
