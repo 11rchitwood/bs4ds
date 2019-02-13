@@ -16,14 +16,6 @@ knitr::opts_chunk$set(cache = TRUE, autodep = TRUE, message = FALSE)
 
 # Introduction
 
-## About Me
-
->- Born and raised in Columbus
->- Athens for the last 7 years
->- Completed BS and MS degrees in Wildlife at UGA
->- Data Analyst at Physician Assistant Education Association
->- Moving back to Columbus this summer
-
 ## About the Talk
 
 >- A **light** introduction to Bayesian Statisitics
@@ -176,6 +168,8 @@ data %>%
   theme_minimal()
 ```
 
+<!-- TODO Fix bottom of fig getting cut off -->
+
 ## The Model
 
 The model of the experiment is an A/B test in which 
@@ -221,7 +215,7 @@ mean(pi_A < pi_B)
 
 >- Looks like Version B wins!
 
-## Plot priors and posteriors
+## Plot posteriors
 
 ```{r posterior_plot, echo = FALSE}
 posterior <- as.matrix(abtest_fit)
@@ -263,7 +257,8 @@ mcmc_areas(posterior, pars = c("pi_A", "pi_B"))
 
 ## Thanks!
 
-[Explanation](https://www.explainxkcd.com/wiki/index.php/1132:_Frequentists_vs._Bayesians)
-
-
 ![xkcd](images/frequentists_vs_bayesians.png)
+
+<!-- TODO Fix bottom of image getting cut off -->
+
+[Explanation](https://www.explainxkcd.com/wiki/index.php/1132:_Frequentists_vs._Bayesians)
